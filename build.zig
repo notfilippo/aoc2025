@@ -4,7 +4,7 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    const DAYS = 3;
+    const DAYS = 4;
 
     inline for (0..DAYS) |day| {
         const name = std.fmt.comptimePrint("day{d}", .{day});
